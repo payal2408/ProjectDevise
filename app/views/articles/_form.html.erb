@@ -1,0 +1,33 @@
+<%= form_with model: @article do |form| %>
+<div class="row">
+    <div class="col-sm-6 form-group">
+      <%= form.label :name %><br>
+      <%= form.text_field :name, class: "form-control bg-light" %>
+    </div>
+
+    <div class="col-sm-6 form-group">
+      <%= form.label :email %><br>
+      <%= form.text_field :email, class: "form-control bg-light" %>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6 form-group">
+      <%= form.label :number %><br>
+      <%= form.text_field :number, class: "form-control bg-light" %>
+    </div>
+
+    <div class="col-sm-6 form-group">
+      <%= form.label :enquiry %><br>
+      <%= form.text_field :subject, class: "form-control bg-light" %>
+    </div>
+</div>
+<div class="row">
+  <div class="col-sm-12 form-group">
+      <%= form.label :message %><br>
+      <%= form.text_area :messege, class: "form-control bg-light" %>
+  </div>
+</div>
+  <div>
+    <%= form.submit 'Submit', class: "btn btn-primary btn-block mb-3" %>
+  </div>
+<% end %>
